@@ -14,7 +14,6 @@ export default function App() {
     show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut" } },
   };
 
-  // --- NUEVO: scroll suave al hacer clic en los enlaces ---
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault();
     const section = document.querySelector(targetId);
@@ -170,10 +169,14 @@ export default function App() {
             <div>
               <h2 className="text-2xl font-bold text-purple-800 mb-4">Planteamiento del problema</h2>
               <p className="text-base text-gray-700 mb-4">
-                ¿Cuál es el problema? La violencia se ha vuelto parte del entorno
-                cotidiano y su normalización hace que muchas personas no la
-                identifiquen como problema. Está presente en medios, escuelas,
-                trabajo y comunidades.
+              La violencia se ha convertido en parte del entorno cotidiano. Esta normalización ha contribuido 
+              a que, en muchos casos, las personas no la identifiquen como un problema, sino como un elemento 
+              más de la vida diaria, presente en los medios de comunicación, en los entornos escolares, laborales 
+              y comunitarios. 
+              En la actualidad, la violencia ha dejado de percibirse como un fenómeno extraordinario y se ha convertido
+              en parte del entorno cotidiano. Esta normalización de la violencia ha contribuido a que, en muchos casos,
+              las personas no la identifiquen como un problema grave, sino como un elemento más de la vida diaria, presente
+              en los medios de comunicación, en los entornos escolares, laborales y comunitarios.
               </p>
 
               <p className="text-base text-gray-700 mb-4">
@@ -213,45 +216,46 @@ export default function App() {
           variants={fadeUp}
         >
           <motion.div variants={slideLeft} className="bg-white rounded-2xl shadow-md p-8">
-            <h2 className="text-2xl font-bold text-purple-800 mb-4">Causas</h2>
+            <h2 className="text-2xl font-bold text-purple-800 mb-4"> Objetivos </h2>
             <p className="text-gray-700 mb-4">
-              La desensibilización no surge aislada: es producto de factores
-              sociales, mediáticos y familiares que actúan en la vida cotidiana.
+            Visibilizar los efectos negativos de la desensibilización a la violencia para conocer las afectaciones que puede generar en la sociedad
             </p>
 
             <ul className="space-y-4">
               <li className="flex gap-3">
                 <div className="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center text-purple-700 font-bold">1</div>
                 <div>
-                  <div className="font-semibold text-gray-800">Pérdida de privacidad y manipulación mediática</div>
-                  <div className="text-sm text-gray-600">La cultura de autoexposición y contenidos llamativos prioriza lo impactante sobre lo moral (Bauman, Donskis).</div>
+                  <div className="font-semibold text-gray-800"> Investigar las posibles causas de la pérdida de empatía en las personas </div>
                 </div>
               </li>
 
               <li className="flex gap-3">
                 <div className="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center text-purple-700 font-bold">2</div>
                 <div>
-                  <div className="font-semibold text-gray-800">Desconexión familiar e institucional</div>
-                  <div className="text-sm text-gray-600">La falta de cohesión familiar y la delegación temprana de educación hacen que jovenes reciban valores desde medios digitales, con consecuencias duraderas.</div>
+                  <div className="font-semibold text-gray-800"> Proponer soluciones frente a la conducta apática adoptada por las personas </div>
                 </div>
               </li>
 
               <li className="flex gap-3">
                 <div className="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center text-purple-700 font-bold">3</div>
                 <div>
-                  <div className="font-semibold text-gray-800">Entornos violentos en infancia</div>
-                  <div className="text-sm text-gray-600">Niños criados en ambientes violentos tienden a normalizar la violencia como forma de resolver conflictos.</div>
+                  <div className="font-semibold text-gray-800"> Informar al público sobre los posibles escenarios a futuro si continúa la problemática </div>
                 </div>
               </li>
             </ul>
           </motion.div>
 
           <motion.div variants={slideRight} className="bg-white rounded-2xl shadow-md p-8">
-            <h3 className="text-xl font-semibold text-purple-700 mb-4">Referencias y notas</h3>
+            <h3 className="text-xl font-semibold text-purple-700 mb-4"> Justificacion </h3>
             <p className="text-sm text-gray-600 mb-4">
-              Basado en ideas de Zygmunt Bauman y Leonidas Donskis sobre{" "}
-              <em>adiaforización</em>, y en análisis como{" "}
-              <em>La fascinación por la violencia televisiva</em> (Manuel Garrido Lora).
+            Con esta investigación buscamos desglosar la importancia de tener presentes las afecciones 
+            generadas por esta problemática, cada vez más común, la violencia se está normalizando con el 
+            crecimiento de las redes sociales, la falta de control de los encargados de las redes nos ha llevado
+            a tener a la mano contenido explícito. La poca atención de las familias también es un riesgo ya que 
+            permiten que los más pequeños se sumerjan en un mundo de poca empatía y violencia al crecer consumiendo
+            estos videos, entendiendo la violencia como algo cotidiano en escuelas o universidades “resolviendo” 
+            conflictos con armas o golpes, situación que también se refleja en el comportamientos con otros familiares.
+            Por lo tanto resulta relevante el exhibir las circunstancias en las que se encuentra nuestra sociedad.
             </p>
 
             <div className="space-y-4">
@@ -286,14 +290,28 @@ export default function App() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-purple-700 mb-4">Cita ilustrativa</h3>
+              <h3 className="text-xl font-semibold text-purple-700 mb-4"> Referencias Bibliograficas </h3>
               <blockquote className="text-gray-600 italic border-l-4 border-purple-300 pl-4 mb-6">
-                “Cuando el dolor pasa a ser ruido de fondo, la humanidad se desdibuja.”
+              Miranda Montero, Y. (2016). Ceguera moral. La pérdida de sensibilidad en la modernidad líquida de
+              Zygmunt Bauman y Leonidas Donskis. Íconos - Revista De Ciencias Sociales, (55), 246–249. Referenciado
+              de:<a href="https://iconos.flacsoandes.edu.ec/index.php/iconos/article/download/1924/1447"> https://iconos.flacsoandes.edu.ec/index.php/iconos/article/download/1924/1447 </a>
               </blockquote>
-
-              <p className="text-sm text-gray-600">
-                Esto repercute en la política, en cómo se clasifican quienes "merecen" consideración moral y en la consolidación de estructuras opresivas.
-              </p>
+              <blockquote className="text-gray-600 italic border-l-4 border-purple-300 pl-4 mb-6">
+              Teorías sobre los efectos de la violencia en los medios: una revisión: no utilizado del todo. 
+              Referenciado de: <a href="https://www.tandfonline.com/doi/abs/10.1174/113564002317348084"> https://www.tandfonline.com/doi/abs/10.1174/113564002317348084 </a>
+              </blockquote>
+              <blockquote className="text-gray-600 italic border-l-4 border-purple-300 pl-4 mb-6">
+              Zografova, Y. y Dimitrova, EE. (2023). El papel del entretenimiento familiar y médico en el comportamiento agresivo en las escuelas búlgaras. 
+              Sociedades, 13(10), 222. Referenciado de: <a href="https://www.mdpi.com/2075-4698/13/10/222"> https://www.mdpi.com/2075-4698/13/10/222 </a>
+              </blockquote>
+              <blockquote className="text-gray-600 italic border-l-4 border-purple-300 pl-4 mb-6">
+              de Roos, M.S., Ferrando, E. Efectos moderadores en el vínculo entre la pornografía violenta y la agresión sexual. Arch Sex Behav 
+              (2025). Referenciado de:<a href="https://link.springer.com/article/10.1007/s10508-025-03199-y"> https://link.springer.com/article/10.1007/s10508-025-03199-y </a>
+              </blockquote>
+              <blockquote className="text-gray-600 italic border-l-4 border-purple-300 pl-4 mb-6">
+              La desensibilización emocional a la violencia contribuye al comportamiento violento de los adolescentes. Referenciado de:
+              <a href="https://pubmed.ncbi.nlm.nih.gov/25684447/"> https://pubmed.ncbi.nlm.nih.gov/25684447/ </a>
+              </blockquote>
             </div>
           </div>
         </motion.section>
@@ -350,7 +368,7 @@ export default function App() {
 
       <footer className="mt-12 py-8">
         <div className="max-w-7xl mx-auto px-6 text-center text-sm text-gray-600">
-          © {new Date().getFullYear()} — Proyecto sobre desensibilización a la violencia · Diseño: Jordy
+          © {new Date().getFullYear()} — Proyecto sobre desensibilización a la violencia · Karen Monsalve Espitia, Emily Diaz Zuluaga, SAMANTHA MARTINEZ ORJUELA Isabel Echeverry Salazar
         </div>
       </footer>
     </div>
